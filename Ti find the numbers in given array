@@ -1,0 +1,30 @@
+EXPERIMENT - 7
+Siddhant arora
+24070123107
+ENTC B1
+
+#include <iostream> 
+using namespace std; 
+int main() {
+    int marks[9] = {10,25,7,42,15,4,6,8,9};
+    int key;
+    bool found = false;
+    cout << "Enter the number you want to search for: ";
+    cin >> key; 
+    for (int i = 0; i < 9; i++) {
+       if (key == marks[i]) {
+            cout << "Key found at location: " << i << endl;  
+            found = true; 
+            break;
+        }
+    }
+    if (!found) {
+        cout << "Key not found in the array." << endl; 
+    }
+
+    return 0; 
+}
+/*Output:-
+Enter the number you want to search for: 6
+Key found at location: 6
+*/
