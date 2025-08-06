@@ -1,0 +1,18 @@
+
+#include<iostream>
+using namespace std;
+int main() {
+    string str1, reversed;
+    cout<<"enter the string 1= ";
+    cin>>str1;
+    int n=str1.length();
+    for(int i=n-1;i>=0;i--) {
+        reversed+=str1[i];
+    }
+    cout<<reversed;
+    return 0;
+}
+/*Output:-
+enter the string 1= Symbiosis
+sisoibmyS
+*/
